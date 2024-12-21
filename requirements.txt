@@ -1,6 +1,5 @@
 streamlit
 torch
-transformers
+transformers>=4.31.0
 scipy
 sentencepiece
-pytest

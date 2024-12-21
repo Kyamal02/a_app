@@ -1,17 +1,8 @@
-import warnings
 
 import streamlit as st
 import torch
 from transformers import BarkModel, AutoProcessor
-import warnings
-import pytest
 
-warnings.filterwarnings(
-    "ignore",
-    message="To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach()",
-    category=UserWarning,
-    module="transformers.models.encodec.modeling_encodec"
-)
 
 @st.cache_resource
 def load_model():
